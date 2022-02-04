@@ -1,0 +1,69 @@
+1. Persiapan Projek
+	- npm init --y [✔️done - 30 jan 2022]
+	- [✔️done] install node version manager (nvm) (not need, just uninstall node and go install 14.17.0 node version, install yang .msi)
+	- [✔️done] install hapi
+	- [✔️done] nodemon (dev depend) 
+	- [✔️done] eslint (dev depend) 
+	- [✔️done] nanoid (saat pembuatan handler.js)
+	- [✔️done] ubah scripts start & lint di package.json
+	- [✔️done] import bookshelf coll and env data to POSTMAN
+
+Estimate Time: 1 day (if im not lazy :D)
+
+2. Build Hapi Framework ('./src')
+	- [✔️done]server.js [localhost, we are not using some aws shiieeet]
+	- routes.js
+	- [done, but required more infos] books.js
+	- [// nanti di consider lagi //] book.js (?)  
+	- handler.js (the most important) detail below
+
+	HANDLER.JS
+	- [✔️done] create
+		- ✔️ [Mandatory]Add book with complete data
+		- ✔️ [Mandatory]add book without name
+		- ✔️ [Mandatory] Add Book with Page Read More Than Page Count
+	- get/read
+		- [Mandatory] Get All Books
+		- [Mandatory] Get Detail Books With Correct Id
+		- [Mandatory] Get Detail Books With Invalid Id
+	- update
+		- [Mandatory] Update Book With Complete Data
+		- [Mandatory] Update Book Without Name
+		- [Mandatory] Update Book With Page Read More Than Page Count
+		- [Mandatory] Update Book with Invalid Id
+	- delete
+		- [Mandatory] Delete Book with Correct Id
+		- [Mandatory] Delete Book with Invalid Id
+
+	- Optional
+		- CREATE/POST READING/UNREADING/FINISHED/UNFINISHED
+			- Add Reading and Finished Book
+			- Add Reading and Unfinished Book with "Dicoding" Name
+			- Add Unreading Books and Unfinished Book "Dicoding" Name
+			- Add Unreading Books and Unfinished Book
+		- [Optional] Get All Reading Books
+		- [Optional] Get All Unreading Books
+		- [Optional] Get All Finished Books
+		- [Optional] Get All Unfinished Books
+		- [Optional] Get All Books Contains "Dicoding" Name
+
+Estimate Time: server routes books could be one day
+	       handler js = a week(s)?
+
+3. Mandatory Kriteria
+	- control if else response
+
+Estimate Time: 5 day of workday
+
+4. Optional Kriteria
+	- keknya itu cuman query parameters doang? let's see
+
+Estimate Time: 5 day of workday?
+
+Total Project Estimate Time: 18 Hari (laaazy)
+	 kalau niat 	   : 7 Hari
+
+
+NOTE:
+
+1) untuk postman sebelum mencoba, jadikan environment yang di import barusan itu jadi 'set active' kalau tidak, maka tidak bisa menggunakan scope variabel environment ke collection, dan akan mengeluarkan error "Invalid request payload JSON format"
