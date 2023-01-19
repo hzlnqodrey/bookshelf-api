@@ -13,6 +13,7 @@
     },
     "rules": {
         "indent" :"off",
-        "eol-last":"off"
+        "eol-last":"off",
+        "eqeqeq":"off"
     }
 }
